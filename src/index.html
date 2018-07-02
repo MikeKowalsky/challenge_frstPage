@@ -8,7 +8,17 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
 	integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+	<script src="./js/scripts.js"></script>
+
 </head>
 <body>
 
@@ -36,6 +46,19 @@
 		<div class="slogan">
 			<h2>First, <span>think</span>. Second, <span>believe</span>. Third, <span>dream</span>.</h2>
 			<h2>And finally, <span class="yellow-text">dare!</span></h2>
+		</div>
+	</section>
+
+	<section class="slider-section">
+		<div class="slick-slider">
+		  <!-- http://kenwheeler.github.io/slick/ -->
+		  <img src="../assets/1200jade-wulfraat-96023-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200jennifer-pallian-146558-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200katherine-chase-71649-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200monika-grabkowska-341345-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200brooke-lark-203839-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200brooke-lark-261287-unsplash.jpg" alt="cake">
+		  <img src="../assets/1200patrick-fore-389419-unsplash.jpg" alt="cake">
 		</div>
 	</section>
 
@@ -93,11 +116,12 @@
 
 	<section class="contact-section">
 		<div class="container">
-			<form action="form.php" method="POST">
+			<form action="./php/form.php" method="POST">
 				<label for="name">Imię</label>
 				<input type="text" name="name" id="name" required>
 				<label for="email">E-mail</label>
 				<input type="email" name="email" id="email" required>
+				<label for="message">Wiadomość</label>
 				<textarea name="message" id="message" rows="3" required/></textarea>
 				<input type="submit" name="submit" value="Wyślij">
 				<input type="reset" name="submit" value="Usuń dane">
